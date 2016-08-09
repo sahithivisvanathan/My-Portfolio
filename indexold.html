@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+<title>
+Generic page for csc412
+</title>
+    <link rel="stylesheet" type="text/css" href="site.css">
+</head>
+<body class="news">
+
+
+<div class="nav">
+<ul id="nav">
+    <li> <a href ="about.html">about  </a></li>
+    <li> <a href ="current.html"> current  </a></li>
+    <li> <a href="Gallery.html"> gallery </a> </li>
+    
+    </ul>
+    <h1 >Hello world!</h1>
+
+<p> Click The Button </p>
+<button onclick="myFunction()">Set Navigation color </button>
+
+
+<script>
+ function myFunction()
+ {
+     document.getElementById("nav").style.backgroundColor= getRandomColor();
+     function getRandomColor()
+     {
+         var letters= '0123456789ABCDEF'.split('');
+         var color ='#';
+         for(var i=0; i<6;i++)
+         {
+             color+=letters[Math.floor(Math.random()*16)];
+             
+         }
+         return color;
+         
+     }
+ }
+ </script>
+</div>
+</body>
+</html>
